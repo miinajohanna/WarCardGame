@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/miinajohanna/WarCardGame">
-    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/four-aces-poker-playing-cards-on-white-background-dean-zangirolami.jpg" alt="Logo" width="80" height="80">
+    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/four-aces-poker-playing-cards-on-white-background-dean-zangirolami.jpg" alt="Logo" width="120" height="100">
   </a>
 
 <h3 align="center">WarCardGame</h3>
