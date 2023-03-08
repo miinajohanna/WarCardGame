@@ -34,7 +34,7 @@
     <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/four-aces-poker-playing-cards-on-white-background-dean-zangirolami.jpg" alt="Logo" width="120" height="100">
   </a>
 
-<h3 align="center">WarCardGame</h3>
+<h3 align="center">War Card Game</h3>
 
   <p align="center">
     Simple card game, typically played by two players using a standard playing card deck.
@@ -92,7 +92,8 @@ Test-driven development assignment in python for methods for sustainable program
 
 * [![Python][Python-img]][Python-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right" width="120" height="60">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
