@@ -220,5 +220,5 @@ Project Link: [https://github.com/miinajohanna/WarCardGame](https://github.com/m
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/miinajohanna
 [product-screenshot]: images/screenshot.png
-[Python-img]: https://www.python.org/static/img/python-logo@2x.png
+[Python-img]: https://www.python.org/static/community_logos/python-logo.png
 [Python-url]: https://www.python.org/
