@@ -90,7 +90,7 @@ Test-driven development assignment in python for methods for sustainable program
 
 ### Built With
 
-* [![Python][Python-img]][Python-url]
+ [![Python][Python-img]][Python-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
