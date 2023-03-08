@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/miinajohanna/WarCardGame">
-    <img src="https://www.pngfind.com/pngs/m/2-26682_playing-cards-free-png-image-playing-cards-falling.png" alt="Logo" width="80" height="80">
+    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/four-aces-poker-playing-cards-on-white-background-dean-zangirolami.jpg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">WarCardGame</h3>
