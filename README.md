@@ -133,7 +133,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE.md` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -167,7 +167,7 @@ Project Link: [https://github.com/miinajohanna/WarCardGame](https://github.com/m
 [issues-shield]: https://img.shields.io/github/issues/miinajohanna/WarCardGame.svg?style=for-the-badge
 [issues-url]: https://github.com/miinajohanna/WarCardGame/issues
 [license-shield]: https://img.shields.io/github/license/miinajohanna/WarCardGame.svg?style=for-the-badge
-[license-url]: https://github.com/miinajohanna/WarCardGame/blob/main/LICENSE.txt
+[license-url]: https://github.com/miinajohanna/WarCardGame/blob/main/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/miinajohanna
 [product-screenshot]: images/screenshot.png
