@@ -9,11 +9,5 @@ class Player:
     def displayName(self):
         return self.name
 
-    def updateScore(self, newScore=1):
-        self.score += newScore
-
-    def displayScore(self):
-        return self.score
-
     def __repr__(self):
         return self.name
