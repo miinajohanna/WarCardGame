@@ -1,3 +1,6 @@
+"""Contains the class Player."""
+
+
 class Player:
     """The class of a player."""
 
@@ -5,11 +8,11 @@ class Player:
         """Name of player."""
         self.name = name
 
-    def changeName(self, newName):
+    def change_name(self, new_name):
         """Set new name."""
-        self.name = newName
+        self.name = new_name
 
-    def displayName(self):
+    def display_name(self):
         """Get name."""
         return self.name
 

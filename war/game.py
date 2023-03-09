@@ -1,36 +1,46 @@
-from player import *
+"""Game class."""
+
 import random
+import player
 
 
 class Game:
-    """Class for the War Game"""
+    """Class for the War Game."""
 
-    def printMenu():
-        """Displays the game menu"""
+    def __init__(self):
+        pass
+
+    def print_menu(self):
+        """Display the game menu."""
         print("\n   M E N U   \n")
         print("1. PLAY GAME")
         print("2. Game Rules")
         print("3. Change name")
         print("4. Exit game\n")
 
-    def printRules():
-        """Displays the rules"""
-        print("\n G A M E   R U L E S\n")
+    def print_rules(self):
+        """Display the rules."""
+        print("\n G A M E   R U L E S\n\n")
         print(
-            "\nEach player turns up a card at the same time. The player with the higher card"
+            "Each player turns up a card at the same time. The player with the"
         )
-        print("takes both cards and puts them face down on the bottom of his stack.")
         print(
-            "\nIf the cards are the same rank, it is WAR. Each player sets three cards"
+            "higher card adds both cards to the bottom of their stack.\n"
+            )
+        print(
+            "If the cards are the same rank, it is WAR. Each player sets"
         )
-        print("face down and a fourth card face up on the game board.")
+        print(
+            "three cards face down and a fourth card face up on the board.")
         print("\nThe player with the higher top card wins both piles.")
         print("If the top cards are again the same rank, WAR repeats.")
         print("\nThe game ends when one player has won all the cards.")
-        print("If a player runs out of cards during WAR, the other player wins.\n")
+        print(
+            "If a player runs out of cards during WAR, the other player wins."
+            )
 
-    def createDeck():
-        """Creates the card deck"""
+    def create_deck(self):
+        """Create the card deck."""
         suits = ["Hearts", "Spades", "Diamonds", "Clubs"]
         deck = []
         for suit in suits:
@@ -38,25 +48,25 @@ class Game:
                 deck.append((card + 2, suit))
         return deck
 
-    def createHands(deck):
-        """Creates hands for each player"""
-        handOne = random.sample(deck, k=26)
-        handTwo = [i for i in deck if i not in handOne]
-        return handOne, handTwo
+    def create_hands(self, deck):
+        """Create hands for each player."""
+        hand_one = random.sample(deck, k=26)
+        hand_two = [i for i in deck if i not in hand_one]
+        return hand_one, hand_two
 
-    def printCardsFaceUp(cardOne, cardTwo, player1, player2):
-        """Displays cards"""
+    def print_cards_face_up(self, card_one, card_two, player1, player2):
+        """Display the compared cards."""
         print(f"\n {player1}       vs.      {player2} ")
         print(" -------- " + " " * 10 + " -------- ")
-        print(f"|{cardOne[0]:<8}|" + " " * 10 + f"|{cardTwo[0]:<8}|")
+        print(f"|{card_one[0]:<8}|" + " " * 10 + f"|{card_two[0]:<8}|")
         print("|        |" + " " * 10 + "|        |")
-        print(f"|{cardOne[1]:^8}|" + " " * 10 + f"|{cardTwo[1]:^8}|")
+        print(f"|{card_one[1]:^8}|" + " " * 10 + f"|{card_two[1]:^8}|")
         print("|        |" + " " * 10 + "|        |")
-        print(f"|{cardOne[0]:>8}|" + " " * 10 + f"|{cardTwo[0]:>8}|")
+        print(f"|{card_one[0]:>8}|" + " " * 10 + f"|{card_two[0]:>8}|")
         print(" -------- " + " " * 10 + " -------- \n")
 
-    def printCardFaceDown():
-        """Displays cards face down"""
+    def print_card_face_down(self):
+        """Display cards face down."""
         print("\n --------            --------")
         print("|* * * * |          |* * * * |")
         print("| * * * *|          | * * * *|")
@@ -65,127 +75,129 @@ class Game:
         print("|* * * * |          |* * * * |")
         print(" --------            --------\n")
 
-    def war(warCards, handOne, handTwo):
-        """Plays cards during Tie breaker"""
+    def war(self, war_cards, hand_one, hand_two):
+        """Play cards during Tie breaker."""
         i = 0
         while i < 3:
-            Game.printCardFaceDown()
-            warCards.append(handOne.pop(0))
-            warCards.append(handTwo.pop(0))
+            self.print_card_face_down()
+            war_cards.append(hand_one.pop(0))
+            war_cards.append(hand_two.pop(0))
             i += 1
 
-    def winCheck(handOne, handTwo, player1, player2):
-        """Display's the winner"""
-        if handOne == []:
+    def win_check(self, hand_one, hand_two, player1, player2):
+        """Display the winner."""
+        if hand_one == []:
             print(f"\n{player2} WINS!\n")
-        elif handTwo == []:
+        elif hand_two == []:
             print(f"\n{player1} WINS!\n")
 
-    def addWonCardsToDeck(hand, cardOne, cardTwo, warCards):
-        """Adds cards to winner's hand"""
-        hand += [cardOne, cardTwo] + warCards
-        warCards.clear()
+    def add_won_cards_to_deck(self, hand, card_one, card_two, war_cards):
+        """Add cards to winner's hand."""
+        hand += [card_one, card_two] + war_cards
+        war_cards.clear()
 
-    def runGame(handOne, handTwo, player1, player2):
-        """Game loop"""
-        warCards = []
-        while len(handOne) > 0 and len(handTwo) > 0:
-            option = input("\nEnter to set down a card face up! (cheat or menu) ")
+    def run_game(self, hand_one, hand_two, player1, player2):
+        """Game loop."""
+        war_cards = []
+        while len(hand_one) > 0 and len(hand_two) > 0:
+            option = input("\nPress Enter (menu or cheat) ")
             print()
             if option == "cheat":
-                Game.cheat(handOne, handTwo, player1, player2)
+                self.cheat(hand_one, hand_two, player1, player2)
                 break
-            elif option == "menu":
+            if option == "menu":
                 break
 
-            cardOne = handOne.pop(0)  # Playing hand for player one
-            cardTwo = handTwo.pop(0)  # Playing hand for player two
-            Game.printCardsFaceUp(cardOne, cardTwo, player1, player2)
+            card_one = hand_one.pop(0)  # Playing hand for player one
+            card_two = hand_two.pop(0)  # Playing hand for player two
+            self.print_cards_face_up(card_one, card_two, player1, player2)
 
-            if cardOne[0] > cardTwo[0]:
-                Game.addWonCardsToDeck(handOne, cardOne, cardTwo, warCards)
-                print(
-                    f"\n{player1} won the cards!\n{len(handOne):<3} cards left for {player1}\n{len(handTwo):<3} cards left for {player2}"
-                )
-            elif cardOne[0] < cardTwo[0]:
-                Game.addWonCardsToDeck(handTwo, cardOne, cardTwo, warCards)
-                print(
-                    f"\n{player2} won the cards!\n{len(handOne):<3} cards left for {player1}\n{len(handTwo):<3} cards left for {player2}"
-                )
+            if card_one[0] > card_two[0]:
+                self.add_won_cards_to_deck(
+                    hand_one, card_one, card_two, war_cards)
+                print(f"\n{player1} won the cards!\n")
+                print(f"{len(hand_one):<3} cards left for {player1}\n")
+                print(f"{len(hand_two):<3} cards left for {player2}")
+            elif card_one[0] < card_two[0]:
+                self.add_won_cards_to_deck(
+                    hand_two, card_one, card_two, war_cards)
+                print(f"\n{player2} won the cards!\n")
+                print(f"{len(hand_one):<3} cards left for {player1}\n")
+                print(f"{len(hand_two):<3} cards left for {player2}")
             else:
                 print("\n          W A R!\n")
-                warCards.append(cardOne)
-                warCards.append(cardTwo)
-                Game.war(warCards, handOne, handTwo)
+                war_cards.append(card_one)
+                war_cards.append(card_two)
+                self.war(war_cards, hand_one, hand_two)
 
-            Game.winCheck(handOne, handTwo, player1, player2)
+            self.win_check(hand_one, hand_two, player1, player2)
 
-    def cheat(handOne, handTwo, player1, player2):
-        """Runs the game until completion"""
-        warCards = []
-        while len(handOne) > 0 and len(handTwo) > 0:
-            cardOne = handOne.pop(0)
-            cardTwo = handTwo.pop(0)
+    def cheat(self, hand_one, hand_two, player1, player2):
+        """Run the game until completion."""
+        war_cards = []
+        while len(hand_one) > 0 and len(hand_two) > 0:
+            card_one = hand_one.pop(0)
+            card_two = hand_two.pop(0)
             print(
-                f"\nComparing {cardOne[0]} of {cardOne[1]} and {cardTwo[0]} of {cardTwo[1]}\n"
+                f"\nComparing {str(card_one)} and {str(card_two)}\n"
             )
-            if cardOne[0] > cardTwo[0]:
-                Game.addWonCardsToDeck(handOne, cardOne, cardTwo, warCards)
-                print(
-                    f"{len(handOne):<3} cards left for {player1}\n{len(handTwo):<3} cards left for {player2}"
-                )
-            elif cardOne[0] < cardTwo[0]:
-                Game.addWonCardsToDeck(handTwo, cardOne, cardTwo, warCards)
-                print(
-                    f"{len(handOne):<3} cards left for {player1}\n{len(handTwo):<3} cards left for {player2}"
-                )
+            if card_one[0] > card_two[0]:
+                self.add_won_cards_to_deck(
+                    hand_one, card_one, card_two, war_cards)
+                print(f"{len(hand_one):<3} cards left for {player1}")
+                print(f"\n{len(hand_two):<3} cards left for {player2}")
+            elif card_one[0] < card_two[0]:
+                self.add_won_cards_to_deck(
+                    hand_two, card_one, card_two, war_cards)
+                print(f"{len(hand_one):<3} cards left for {player1}")
+                print(f"\n{len(hand_two):<3} cards left for {player2}")
             else:
                 print("W A R")
-                warCards.append(cardOne)
-                warCards.append(cardTwo)
+                war_cards.append(card_one)
+                war_cards.append(card_two)
                 i = 0
                 while i < 3:
-                    print(f"War cards {i}")
-                    if len(handOne) > 0 and len(handTwo) > 0:
-                        warCards.append(handOne.pop(0))
-                        warCards.append(handTwo.pop(0))
+                    print(f"War cards {i+1}")
+                    if len(hand_one) > 0 and len(hand_two) > 0:
+                        war_cards.append(hand_one.pop(0))
+                        war_cards.append(hand_two.pop(0))
                     i += 1
 
-            Game.winCheck(handOne, handTwo, player1, player2)
+            self.win_check(hand_one, hand_two, player1, player2)
 
-    def game():
-        """Game Menu"""
-        print("\n-------- Welcome to a game of W A R! --------\n")
+    def game(self):
+        """Game Menu."""
         invalid = True
         while invalid:
-            gameMode = input(
+            game_mode = input(
                 "\nSingle-player or two-player game mode? (press 1 or 2): "
             )
-            if gameMode == "1" or gameMode == "2":
+            if game_mode in ('1', '2'):
                 invalid = False
             else:
                 print("Only 1 or 2 allowed! Try again!")
 
-        player1 = Player(input("\nPlease enter a name for player 1: "))
-        if gameMode == "1":
-            player2 = Player()
-        elif gameMode == "2":
-            player2 = Player(input("\nPlease enter a name for player 2: "))
+        player1 = player.Player(input("\nPlease enter a name for player 1: "))
+        if game_mode == "1":
+            player2 = player.Player()
+        elif game_mode == "2":
+            player2 = player.Player(input(
+                "\nPlease enter a name for player 2: "))
 
         cond = True
         while cond:
-            Game.printMenu()
+            self.print_menu()
             option = input("\nEnter an option: ")
             if option == "1":
-                deck = Game.createDeck()
-                handOne, handTwo = Game.createHands(deck)
-                Game.runGame(handOne, handTwo, player1, player2)
+                deck = self.create_deck()
+                hand_one, hand_two = self.create_hands(deck)
+                self.run_game(hand_one, hand_two, player1, player2)
             elif option == "2":
-                Game.printRules()
+                self.print_rules()
             elif option == "3":
-                player1.changeName(input(f"\n{player1}, enter new name: "))
-                if gameMode == "2":
-                    player2.changeName(input(f"\n{player2} enter new name: "))
+                player1.change_name(input(f"\n{player1}, enter new name: "))
+                if game_mode == "2":
+                    player2.change_name(input(f"\n{player2} enter new name: "))
             elif option == "4":
                 print("\n       B            Y              E\n")
                 cond = False
