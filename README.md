@@ -142,7 +142,7 @@ Distributed under the MIT License. See `LICENSE.md` for more information.
 <!-- CONTACT -->
 ## Contact
 
-[![Gmail][Gmail-img]]
+[Gmail-img]
 
 Miina Mäkinen - miina.makinen@gmail.com 
 
@@ -175,4 +175,4 @@ Courage Räsänen - couragerasanen@gmail.com
 [codestyle-url]: https://github.com/psf/black
 [Gmail-img]: https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
 [project-link-url]: https://github.com/miinajohanna/WarCardGame
-[project-link-img]: https://img.shields.io/badge/Project%20Link-War%20Card%20Game-brightgreen
+[project-link-img]: https://img.shields.io/badge/Project%20Link-War%20Card%20Game-brightgreen.svg?style=for-the-badge&logo
