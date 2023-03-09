@@ -24,7 +24,6 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
 [![CodeStyle][codestyle-shield]][codestyle-url]
 
 
@@ -175,5 +174,5 @@ Project Link: [https://github.com/miinajohanna/WarCardGame](https://github.com/m
 [product-screenshot]: images/screenshot.png
 [Python-img]: https://www.python.org/static/community_logos/python-logo.png
 [Python-url]: https://www.python.org/
-[codestyle-shield]: https://img.shields.io/badge/code%20style-black-000000.svg
+[codestyle-shield]: https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge
 [codestyle-url]: https://github.com/psf/black
