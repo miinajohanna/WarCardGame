@@ -142,7 +142,7 @@ Distributed under the MIT License. See `LICENSE.md` for more information.
 <!-- CONTACT -->
 ## Contact
 
-[Gmail][Gmail-img]
+[![Gmail][Gmail-img]][Gmail-url]
 
 Miina Mäkinen - miina.makinen@gmail.com 
 
