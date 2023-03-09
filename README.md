@@ -142,8 +142,6 @@ Distributed under the MIT License. See `LICENSE.md` for more information.
 <!-- CONTACT -->
 ## Contact
 
-[![Gmail][Gmail-img]][Gmail-url]
-
 Miina Mäkinen - miina.makinen@gmail.com 
 
 Courage Räsänen - couragerasanen@gmail.com
@@ -174,7 +172,5 @@ Courage Räsänen - couragerasanen@gmail.com
 [Python-url]: https://www.python.org/
 [codestyle-shield]: https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge
 [codestyle-url]: https://github.com/psf/black
-[Gmail-img]: https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
-[Gmail-url]: https://mail.google.com/
 [project-link-url]: https://github.com/miinajohanna/WarCardGame
 [project-link-img]: https://img.shields.io/badge/Project%20Link-War%20Card%20Game-brightgreen.svg?style=for-the-badge&logo
