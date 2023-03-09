@@ -172,7 +172,7 @@ Project Link: [https://github.com/miinajohanna/WarCardGame](https://github.com/m
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/miinajohanna
 [product-screenshot]: images/screenshot.png
-[Python-img]: https://www.python.org/static/community_logos/python-logo.png
+[Python-img]: https://img.shields.io/badge/Python-%20-yellow.svg?logo=data:https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg&style=for-the-badge
 [Python-url]: https://www.python.org/
 [codestyle-shield]: https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge
 [codestyle-url]: https://github.com/psf/black
