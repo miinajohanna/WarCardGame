@@ -85,13 +85,11 @@ Test-driven development assignment in python for methods for sustainable program
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 ### Built With
 
-* [![Python][Python-img]][Python-url]
+[![Python][Python-img]][Python-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 
@@ -100,6 +98,7 @@ Test-driven development assignment in python for methods for sustainable program
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
+
 
 ### Prerequisites
 
@@ -143,9 +142,9 @@ Distributed under the MIT License. See `LICENSE.md` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Miina Mäkinen - miina.makinen@gmail.com 
+[!Gmail][Gmail-img] Miina Mäkinen - miina.makinen@gmail.com 
 
-Courage Räsänen - couragerasanen@gmail.com
+[!Gmail][Gmail-img] Courage Räsänen - couragerasanen@gmail.com
 
 Project Link: [https://github.com/miinajohanna/WarCardGame](https://github.com/miinajohanna/WarCardGame)
 
@@ -176,3 +175,4 @@ Project Link: [https://github.com/miinajohanna/WarCardGame](https://github.com/m
 [Python-url]: https://www.python.org/
 [codestyle-shield]: https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge
 [codestyle-url]: https://github.com/psf/black
+[Gmail-img]: https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
