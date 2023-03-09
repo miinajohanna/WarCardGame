@@ -148,6 +148,7 @@ Miina Mäkinen - miina.makinen@gmail.com
 
 Courage Räsänen - couragerasanen@gmail.com
 
+
 [![project-link][project-link-img]][project-link-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
