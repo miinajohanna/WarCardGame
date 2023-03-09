@@ -142,9 +142,9 @@ Distributed under the MIT License. See `LICENSE.md` for more information.
 <!-- CONTACT -->
 ## Contact
 
-[!Gmail][Gmail-img] Miina Mäkinen - miina.makinen@gmail.com 
+[Gmail-img] Miina Mäkinen - miina.makinen@gmail.com 
 
-[!Gmail][Gmail-img] Courage Räsänen - couragerasanen@gmail.com
+[Gmail-img] Courage Räsänen - couragerasanen@gmail.com
 
 Project Link: [https://github.com/miinajohanna/WarCardGame](https://github.com/miinajohanna/WarCardGame)
 
