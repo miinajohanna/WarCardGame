@@ -7,7 +7,7 @@ class Player:
     def __init__(self, name="Computer"):
         """Name of player."""
         self.name = name
-    
+
     def change_name(self, new_name):
         """Set new name."""
         self.name = new_name

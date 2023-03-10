@@ -19,7 +19,6 @@ class TestGameClass(unittest.TestCase):
         cls = game.Game
         self.assertIsInstance(instance, cls)
 
-
     def test_add_won_cards_to_deck_type(self):
         """Ensure that the elements are type tuple in type list."""
         card_one = (3, "H")
@@ -46,16 +45,13 @@ class TestGameClass(unittest.TestCase):
         create_deck = game.Game().create_deck()
         self.assertIs(type(create_deck[0]), tuple)
 
-    
     def test_pop_cards(self):
         """Test the pop function."""
         self.assertIs(type(game.Game.card_one), tuple)
 
-
     def test_war_cards_type(self):
         """Test the functionality of the win check."""
         self.assertIs(type(game.Game.war_cards), list)
-        
 
 
 if __name__ == "__main__":
