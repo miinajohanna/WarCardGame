@@ -125,7 +125,6 @@ Here is a link: https://chocolatey.org/install
    ```
    $ make install
    ```
-   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GAME EXECUTION -->
@@ -146,20 +145,19 @@ All usages will not be documented here, navigate to the makefile file to find mo
    ```sh
    make lint
    ```
-### codestyle
+### Codestyle
    ```sh
    make black
    ```
-### unit tests & code coverage
+### Unit tests & Code coverage
    ```sh
    make test
    ```
-### generating documentation
+### Generating Documentation
    ```sh
    make doc
    ```
    
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
