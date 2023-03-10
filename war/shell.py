@@ -58,11 +58,11 @@ class Shell(cmd.Cmd):
                 self.game.add_cards_to_deck(self.game.hand_two)
                 print(f'\n{self.player2} wins the cards')
                 self.game.display_cards_left(self.player1, self.player2)
-        winner = self.game.win_check()
-        if winner == '1':
-            print(f'\n{self.player1} WINS!')
-        elif winner == '2':
-            print(f'\n{self.player2} WINS!')
+            winner = self.game.win_check()
+            if winner == '1':
+                print(f'\n{self.player1} WINS!')
+            elif winner == '2':
+                print(f'\n{self.player2} WINS!')
 
     
     def do_cheat(self, _):
@@ -83,11 +83,11 @@ class Shell(cmd.Cmd):
             elif round_win == 2:  # player2 wins
                 self.game.add_cards_to_deck(self.game.hand_two)
                 self.game.display_cards_left(self.player1, self.player2)
-        winner = self.game.win_check()
-        if winner == '1':
-            print(f'\n{self.player1} WINS!')
-        elif winner == '2':
-            print(f'\n{self.player2} WINS!')
+            winner = self.game.win_check()
+            if winner == '1':
+                print(f'\n{self.player1} WINS!')
+            elif winner == '2':
+                print(f'\n{self.player2} WINS!')
 
     def do_rules(self, _):
         """Show the rules of the game."""
