@@ -103,33 +103,34 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-This repo will uses make, so in order to that you will need the windows package manager Chocolatey. Here is a link: https://chocolatey.org/install
+This repo will uses make, so in order to that you will need the windows package manager Chocolatey.
+Here is a link: https://chocolatey.org/install
 
 * Install GNU make
   ```sh
-  choco install make
+  $ choco install make
   ```
 
 ### Installation of essentials 
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/miinajohanna/WarCardGame.git
+   $ git clone https://github.com/miinajohanna/WarCardGame.git
    ```
 2. Create a virtual environment
    ```
-   make venv
+   $ make venv
    ```
 3. Install the requirements.txt (with VENV activated) 
    ```
-   make install
+   $ make install
    ```
-4. 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-### Execution of the game
-1. 
+<!-- GAME EXECUTION -->
+### Game execution
+1. Run the game
    ```sh
    $ cd war
    
