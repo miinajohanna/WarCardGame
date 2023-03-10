@@ -110,7 +110,7 @@ Here is a link: https://chocolatey.org/install
   ```sh
   $ choco install make
   ```
-  This repo will also use the dot command.
+* Install the dot command.
   ```sh
   choco install graphviz
   ```
