@@ -112,7 +112,7 @@ Here is a link: https://chocolatey.org/install
   ```
 * Install the dot command.
   ```sh
-  choco install graphviz
+  $ choco install graphviz
   ```
 ### Installation of essentials 
 
@@ -146,19 +146,19 @@ All usages will not be documented here, navigate to the makefile file to find mo
 ### Static code linters
    Flake8 and pylint
    ```sh
-   make lint
+   $ make lint
    ```
 ### Codestyle
    ```sh
-   make black
+   $ make black
    ```
 ### Unit tests & Code coverage
    ```sh
-   make test
+   $ make test
    ```
 ### Generating Documentation
    ```sh
-   make doc
+   $ make doc
    ```
    
 
