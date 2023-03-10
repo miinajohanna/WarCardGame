@@ -127,7 +127,6 @@ Here is a link: https://chocolatey.org/install
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GAME EXECUTION -->
 ### Game execution
 1. Run the game
@@ -139,10 +138,27 @@ Here is a link: https://chocolatey.org/install
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+This project can be used for applying static code linters, codestyle, unit tests, code coverage and generating documentation.
+All usages will not be documented here, navigate to the makefile file to find more usages. 
+### Static code linters
+   Flake8 and pylint
+   ```sh
+   make lint
+   ```
+### codestyle
+   ```sh
+   make black
+   ```
+### unit tests & code coverage
+   ```sh
+   make test
+   ```
+### generating documentation
+   ```sh
+   make doc
+   ```
+   
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
