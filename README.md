@@ -125,8 +125,9 @@ Here is a link: https://chocolatey.org/install
    ```
    $ make install
    ```
-
+   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GAME EXECUTION -->
 ### Game execution
 1. Run the game
