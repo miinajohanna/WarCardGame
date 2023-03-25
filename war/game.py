@@ -14,6 +14,9 @@ class Game:
     def __init__(self):
         """Initialize the object."""
         random.seed()
+        self.deck = []
+        self.hand_one = []
+        self.hand_two = []
 
     def create_deck(self):
         """Create the card deck."""
@@ -52,14 +55,16 @@ class Game:
         """Display the rules."""
         msg = (
             "\n\n G A M E   R U L E S"
-            "\nEach player turns up a card at the same time. The player with the\n"
-            "higher card adds both cards to the bottom of their stack.\n"
+            "\nEach player turns up a card at"
+            + "the same time. The player with the\n"
+            " higher card adds both cards to the bottom of their stack.\n"
             "\nIf the cards are the same rank, it is WAR. Each player sets\n"
             "three cards face down and a fourth card face up on the board.\n"
             "\nThe player with the higher top card wins both piles.\n"
             "If the top cards are again the same rank, WAR repeats.\n"
             "The game ends when one player has won all the cards.\n"
-            "\nIf a player runs out of cards during WAR, the other player wins.\n\n"
+            "\nIf a player runs out of cards during WAR, the other"
+            + " player wins.\n\n"
         )
         print(msg)
 
@@ -75,8 +80,7 @@ class Game:
             return 1
         if self.card_one[0] < self.card_two[0]:
             return 2
-        else:
-            return 0
+        return 0
 
     def war(self):
         """Append concealed cards to war cards list."""
@@ -99,6 +103,7 @@ class Game:
             return 2
         if len(self.hand_two) == 0:
             return 1
+        return None
 
     def display_cards_left(self, player1, player2):
         """Display who won the round and how many cards are left."""

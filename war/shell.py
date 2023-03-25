@@ -18,7 +18,7 @@ class Shell(cmd.Cmd):
         self.player1 = player.Player()
         self.player2 = player.Player()
 
-    def do_name(self, arg):
+    def do_name(self):
         """Set a new name."""
         option = input("\nWhich name do you want to update? (1 or 2) ")
         if option == "1":
@@ -39,9 +39,8 @@ class Shell(cmd.Cmd):
             if option == "exit":
                 self.do_exit(_)
                 break
-            else:
-                print(f"\n{self.player1}      vs.      {self.player2}")
-                self.game.display_cards()
+            print(f"\n{self.player1}      vs.      {self.player2}")
+            self.game.display_cards()
             round_win = self.game.compare_cards()
             if round_win == 0:  # war
                 print("\n       W A R !")
