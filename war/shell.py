@@ -18,7 +18,7 @@ class Shell(cmd.Cmd):
         self.player1 = player.Player()
         self.player2 = player.Player()
 
-    def do_name(self):
+    def do_name(self, arg):
         """Set a new name."""
         option = input("\nWhich name do you want to update? (1 or 2) ")
         if option == "1":
